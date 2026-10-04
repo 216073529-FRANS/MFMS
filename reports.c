@@ -2,6 +2,8 @@
 #include "reports.h"
 #include "employee.h"
 #include "budget.h"
+#include "supplier.h"
+#include "assets.h"
 
 void employeeReport()
 {
@@ -70,6 +72,24 @@ void budgetReport()
     printf("Total Remaining Budget: %.2f\n", totalRemaining);
 }
 
+void supplierReport()
+{
+    printf("\n========== SUPPLIER REPORT ==========\n");
+
+    printf("Registered Suppliers:\n\n");
+
+    displaySuppliers();
+}
+
+void assetReport()
+{
+    printf("\n========== ASSET REPORT ==========\n");
+
+    printf("Registered Municipal Assets:\n\n");
+
+    displayAssets();
+}
+
 void reportsMenu()
 {
     int option;
@@ -79,7 +99,9 @@ void reportsMenu()
         printf("\n========== REPORTS ==========\n");
         printf("1. Employee Report\n");
         printf("2. Budget Report\n");
-        printf("3. Return to Main Menu\n");
+        printf("3. Supplier Report\n");
+        printf("4. Asset Report\n");
+        printf("5. Return to Main Menu\n");
         printf("=============================\n");
         printf("Enter your choice: ");
         scanf("%d", &option);
@@ -95,6 +117,14 @@ void reportsMenu()
                 break;
 
             case 3:
+                supplierReport();
+                break;
+
+            case 4:
+                assetReport();
+                break;
+
+            case 5:
                 printf("\nReturning to Main Menu...\n");
                 break;
 
@@ -102,5 +132,5 @@ void reportsMenu()
                 printf("\nInvalid choice. Please try again.\n");
         }
 
-    } while (option != 3);
+    } while (option != 5);
 }

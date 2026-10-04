@@ -3,6 +3,8 @@
 
 void employeeReport();
 void budgetReport();
+void supplierReport();
+void assetReport();
 void reportsMenu();
 
 #endif
