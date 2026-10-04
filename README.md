@@ -1,31 +1,34 @@
-# Municipal Financial Management System (MFMS)
+Municipal Financial Management System (MFMS)
 
-## PAP521S – Programming in Practice
+PAP521S – Programming in Practice
 
-Project A – Foundation System
+Project A: Municipal Financial Management System
 
-Programming Language: ANSI C (C99)
-Development Environment: Visual Studio Code + GCC
-Version Control: Git & GitHub
-Project Type: Group Project
-Submission: Moodle + GitHub Repository
-Due Date: 02 October 2026
+Programming Language: ANSI C (C99)  
+Development Environment: Visual Studio Code and GCC  
+Version Control: Git and GitHub  
+Project Type: Group Project  
+Group Number: 0  
+Submission: Moodle and GitHub Repository  
+
+
+
+
+1. Project Description
+
+The Municipal Financial Management System (MFMS) is a basic C program developed for the PAP521S Programming in Practice course.
+
+The system is designed to help manage some basic municipal information such as employees, budgets, suppliers and assets. It is a menu-driven program where the user can select different sections of the system.
+
+The project also gives the group an opportunity to apply the C programming concepts covered in class, including variables, arrays, strings, functions, loops, conditions and calculations.
+
+Git and GitHub were used by the group to work on and keep track of the project.
 
 ---
 
-## 1. Project Description
+2. System Modules
 
-The Municipal Financial Management System (MFMS) is a menu-driven C application developed for the PAP521S Programming in Practice course.
-
-The purpose of the system is to provide a basic computerized system for managing municipal financial and administrative information. The system demonstrates the use of C programming concepts including variables, data types, input/output, decision-making, loops, arrays, strings, functions, calculations, validation, and modular programming.
-
-The project is being developed collaboratively using Git and GitHub.
-
----
-
-## 2. System Modules
-
-The system consists of the following main modules:
+The system contains the following modules:
 
 1. Employee Management
 2. Budget Management
@@ -33,13 +36,13 @@ The system consists of the following main modules:
 4. Asset Management
 5. Reports
 
-The main menu provides access to each module and allows the user to exit the system.
+The main menu is used to access the different modules.
 
----
 
-## 3. Project Structure
 
-```text
+3. Project Files
+
+
 MFMS
 ├── .gitignore
 ├── main.c
@@ -56,19 +59,19 @@ MFMS
 └── README.md
 ```
 
----
 
-## 4. Group Members
 
-| No. | Name              | Student Number  | Responsibility                      |
-| --- | ----------------- | --------------- | ----------------------------------- |
-| 1   | Naftal Fotolela   | 213071916       | Testing & Documentation             |
-| 2   | Corneluis D Frans | 216073529       | Functions, Integration & Validation |
-| 3   | Dave K Angulah    | 201030586       | Budget Module                       |
-| 4   | Kaluwa Martha     | 222051078       | Supplier Management                 |
-| 5   | Tjiharuka Utjiwee | 219110972       | Assets Management
-| 6   | Nalilongwe Lawrence  | 225081903   | EMployee Management                     |
-| 7   | To be confirmed   | To be confirmed | To be confirmed                     |
+4. Group Members
+
+| No. | Name | Student Number | Responsibility |
+|---|---|---|---|
+| 1 | Naftal Fotolela | 213071916 | Testing & Documentation |
+| 2 | Corneluis D Frans | 216073529 | Functions, Integration & Validation |
+| 3 | Dave K Angulah | 201030586 | Budget Module |
+| 4 | Kaluwa Martha | 222051078 | Supplier Management |
+| 5 | Tjiharuka Utjiwee | 219110972 | Assets Management |
+| 6 | Nalilongwe Lawrence | 225081903 | Employee Management |
+| 7 | I. Gustav | 224095080 | Reports |
 
 ---
 
@@ -76,82 +79,87 @@ MFMS
 
 ### Employee Management
 
-The Employee Management module provides functionality for:
+The employee section allows the user to:
 
-* Adding employees
-* Displaying employee information
-* Searching for employees using employee ID
-* Calculating gross salary
-* Displaying salary information
-* Storing employee information using structures and arrays
+- Add employees
+- Display employees
+- Search for an employee
+- Calculate salary information
+- Display employee information
+
+Employee information is stored using structures and arrays.
 
 ### Budget Management
 
-The Budget Management module provides functionality for:
+The budget section allows the user to:
 
-* Entering departmental budgets
-* Recording expenditure
-* Calculating remaining budgets
-* Determining whether departments are within budget
-* Identifying departments that exceed their budgets
+- Add departmental budgets
+- Enter expenditure
+- Calculate the remaining budget
+- Check whether expenditure is within the budget
+- Display departments that have exceeded their budgets
 
 ### Supplier Management
 
-The Supplier Management module provides functionality for:
+The supplier section allows the user to:
 
-* Adding suppliers
-* Displaying supplier information
-* Searching for suppliers
-* Comparing/searching supplier information
-* Storing supplier details such as name, email, telephone number and location
+- Add suppliers
+- Display suppliers
+- Search suppliers by ID
+- Search suppliers by name
+
+Supplier information includes the supplier ID, name, email, telephone number and location.
 
 ### Asset Management
 
-The Asset Management module provides functionality for:
+The asset section allows the user to:
 
-* Adding and storing assets
-* Displaying asset information
-* Searching for assets
-* Recording asset ID, name, type, purchase value, department and condition
+- Add assets
+- Display assets
+- Search for assets
+
+The system stores information such as asset ID, name, type, value, department and condition.
 
 ### Reports
 
-The Reports module provides summary information for:
+The reports section contains:
 
-* Employees
-* Budgets
-* Suppliers
-* Assets
+- Employee Report
+- Budget Report
+- Supplier Report
+- Asset Report
+
+The Employee Report gives a summary of employee salary information. The Budget Report shows the total allocated budget, expenditure and remaining budget. The Supplier and Asset Reports display the records stored in the system.
 
 ---
 
 ## 6. Compilation
 
-Open the project folder in Visual Studio Code and compile the system using:
+Open the MFMS folder in Visual Studio Code and compile the program using:
 
 ```bash
 gcc *.c -o mfms
 ```
 
-If compilation is successful, an executable named `mfms.exe` will be created.
+On Windows, this will create `mfms.exe`.
 
----
 
-## 7. Running the Program
 
-After successful compilation, run the program using:
+7. Running the Program
+
+Run the program from the VS Code terminal using:
 
 ```powershell
 .\mfms.exe
 ```
 
-The system will display the main menu.
+The main menu will then be displayed.
 
----
 
-## 8. Main Menu
 
-The main menu provides the following options:
+8. Main Menu
+
+The main menu contains:
 
 ```text
 ==================================================
@@ -166,122 +174,91 @@ The main menu provides the following options:
 ==================================================
 ```
 
----
 
-## 9. Input Validation
 
-The system includes validation to reduce incorrect input and improve reliability.
+9. Testing
 
-Examples include:
+The system was tested during development after the different modules were added and integrated.
 
-* Invalid menu selections
-* Negative salary values
-* Negative budget values
-* Empty employee or supplier names
-* Invalid numerical input
-* Searching for records that do not exist
+Testing included:
 
----
+- Main menu
+- Employee Management
+- Budget Management
+- Supplier Management
+- Asset Management
+- Reports
+- Searching
+- Salary calculations
+- Compilation
+- Integration of the different modules
 
-## 10. Testing
+The system was also tested using sample employee, supplier, budget and asset records.
 
-Testing is performed throughout development to identify and correct programming errors.
 
-Testing includes:
 
-* Compilation testing
-* Menu testing
-* Employee testing
-* Budget testing
-* Supplier testing
-* Asset testing
-* Report testing
-* Search functionality testing
-* Salary calculation testing
-* Input validation testing
-* Integration testing
+10. Git and GitHub
 
-Testing results and identified issues are documented as part of the project's development process.
+Git and GitHub were used to manage the project and keep track of changes made by the group members.
 
----
+The group used GitHub to commit and push changes, fix problems and combine the different modules into the final system.
 
-## 11. Version Control
+**GitHub Repository:**
 
-Git and GitHub are used for version control and collaboration.
+https://github.com/216073529/MFMS.git
 
-The project repository allows group members to:
 
-* Clone the project
-* Create and modify source files
-* Fix bugs
-* Test changes
-* Commit changes
-* Push changes to GitHub
-* Track individual contributions
-* Collaborate on the same codebase
 
-Each group member is expected to make identifiable contributions to the project.
+11. Development Process
 
----
+The project was developed by first creating the different modules and then connecting them through the main program.
 
-## 12. Development Workflow
-
-The project follows the general workflow:
+The general process used was:
 
 ```text
-INPUT
+Input
   ↓
-PROCESSING
+Processing
   ↓
-STORAGE
+Storage
   ↓
-SEARCH
+Search
   ↓
-CALCULATION
+Calculation
   ↓
-OUTPUT
+Output
 ```
 
-Changes are tested before being committed to the repository.
+The program was compiled and tested while the modules were being integrated.
 
----
 
-## 13. Project Status
 
-The MFMS project is currently under development and testing.
+12. Current Project Status
 
-The group is working on:
+The Project A foundation system has been completed and the different modules have been integrated into the main program.
 
-* Completing individual modules
-* Integrating modules into the main program
-* Testing functionality
-* Fixing programming errors
-* Improving input validation
-* Preparing documentation
-* Preparing for demonstration and presentation
+The system currently includes Employee Management, Budget Management, Supplier Management, Asset Management and Reports.
 
----
+The project is ready for submission and demonstration.
 
-## 14. Future Development
 
-Future versions of the system may include:
 
-* Improved data validation
-* More advanced reporting
-* File/database storage
-* Improved user interface
-* Additional financial calculations
-* More detailed municipal financial reports
-* Expanded employee, supplier and asset management features
+13. Future Development
 
----
+The system can be expanded in Project B by adding features such as:
 
-## 15. Academic Project
+- File or database storage
+- More detailed reports
+- Better input validation
+- More financial calculations
+- Improved user interface
+- Additional employee, supplier and asset functions
 
-This project is developed as part of:
 
-PAP521S – Programming in Practice
 
-Project A – Municipal Financial Management System
+14. Academic Project
 
-The project demonstrates practical application of programming concepts covered during the course.
+Course: PAP521S – Programming in Practice  
+Project: Project A – Municipal Financial Management System
+
+This project demonstrates the use of the C programming concepts covered during the course.
