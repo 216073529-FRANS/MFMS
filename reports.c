@@ -134,3 +134,4 @@ void reportsMenu()
 
     } while (option != 5);
 }
+return 0;
