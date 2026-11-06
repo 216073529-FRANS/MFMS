@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include "assets.h"
-
 #define MAX_ASSETS 100
 
 struct Asset
@@ -30,19 +29,16 @@ void addAsset()
     printf("Enter Asset ID: ");
     scanf("%d", &assets[assetCount].assetID);
     getchar();
-
     printf("Enter Asset Name: ");
     fgets(assets[assetCount].assetName,
           sizeof(assets[assetCount].assetName), stdin);
     assets[assetCount].assetName[
         strcspn(assets[assetCount].assetName, "\n")] = '\0';
-
     printf("Enter Asset Type: ");
     fgets(assets[assetCount].assetType,
           sizeof(assets[assetCount].assetType), stdin);
     assets[assetCount].assetType[
         strcspn(assets[assetCount].assetType, "\n")] = '\0';
-
     printf("Enter Purchase Value: ");
     scanf("%f", &assets[assetCount].purchaseValue);
     getchar();
@@ -107,12 +103,10 @@ void searchAsset()
             printf("Purchase Value: %.2f\n", assets[i].purchaseValue);
             printf("Department: %s\n", assets[i].department);
             printf("Condition: %s\n", assets[i].condition);
-
             found = 1;
             break;
         }
     }
-
     if (found == 0)
     {
         printf("\nAsset not found.\n");
